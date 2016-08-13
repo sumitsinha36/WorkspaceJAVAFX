@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="1192.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:id="myAnchorPain">
+   <children>
+      <Label layoutX="439.0" layoutY="14.0" text="Spool Mail View">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView layoutY="280.0" prefHeight="576.0" prefWidth="1192.0" fx:id="tableView">
+        <columns>
+          <TableColumn prefWidth="75.0" text="EID" fx:id="column_eid"/>
+          <TableColumn prefWidth="75.0" text="State" fx:id="column_state"/>
+        </columns>
+      </TableView>
+      <TextField fx:id="eventid" layoutX="169.0" layoutY="72.0" text="" />
+      <Label layoutX="95.0" layoutY="72.0" prefHeight="25.0" prefWidth="57.0" text="Event Id" />
+      <Button fx:id="getSpoolData" layoutX="735.0" layoutY="72.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="110.0" text="Show Details" />
+   </children>
+</AnchorPane>
